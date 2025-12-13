@@ -1,39 +1,41 @@
-# Homebrew Tap for Nexar CLI
+# Nexar Homebrew Tap
 
-This is the official Homebrew tap for the Nexar CLI tool.
+Official Homebrew tap for Nexar tools and utilities.
 
 ## Installation
 
 ```bash
-brew install getnexar/tap/nexar
+brew tap getnexar/tap
 ```
 
-## Usage
+## Available Formulae
 
-After installation:
+| Formula | Description | Install |
+|---------|-------------|---------|
+| `nexar` | CLI for deploying apps to Nexar Platform | `brew install getnexar/tap/nexar` |
+
+## Quick Install
+
+Install any formula directly (automatically taps if needed):
 
 ```bash
-# Login to Nexar Platform
-nexar login
-
-# List your apps
-nexar apps
-
-# Create a new app
-nexar create my-app
-
-# Deploy your code
-nexar deploy
+brew install getnexar/tap/<formula>
 ```
 
 ## Updating
 
 ```bash
-brew upgrade nexar
+brew update
+brew upgrade <formula>
 ```
 
 ## Uninstalling
 
 ```bash
-brew uninstall nexar
+brew uninstall <formula>
+brew untap getnexar/tap  # Remove the tap entirely
 ```
+
+## Issues
+
+Report issues at [github.com/getnexar/homebrew-tap/issues](https://github.com/getnexar/homebrew-tap/issues)
