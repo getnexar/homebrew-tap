@@ -1,13 +1,13 @@
 class Nexar < Formula
   desc "CLI tool for deploying apps to Nexar Platform"
   homepage "https://www.corp.nexars.ai"
-  version "1.5.0"
+  version "1.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/nexar-cli-releases/v1.5.0/nexar-darwin-amd64"
-      sha256 "586440096b7b7d15d7da3926d57415de8b00240173f453f3229fa83321b6c4cc"
+      url "https://storage.googleapis.com/nexar-cli-releases/v1.5.1/nexar-darwin-amd64"
+      sha256 "27f30c9ae1f784d3e55b491de2f05421c701cfcc9e7a9f9bb4a97e161e2c6b85"
 
       def install
         bin.install "nexar-darwin-amd64" => "nexar"
@@ -15,8 +15,8 @@ class Nexar < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/nexar-cli-releases/v1.5.0/nexar-darwin-arm64"
-      sha256 "3aebb961210cf05a51f39e6250a6f689aeeaeaba9e7a8abc8e14f6ce74a0949b"
+      url "https://storage.googleapis.com/nexar-cli-releases/v1.5.1/nexar-darwin-arm64"
+      sha256 "0f4cc91d898f2eb0d08854a166d695d2ca15666b14f6945110caa3b9389252c3"
 
       def install
         bin.install "nexar-darwin-arm64" => "nexar"
@@ -26,8 +26,8 @@ class Nexar < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/nexar-cli-releases/v1.5.0/nexar-linux-amd64"
-      sha256 "d3bdce67223967a42b3ea71e1d0fef80a7bec66b3cc47a156c3d695e26ff7c0d"
+      url "https://storage.googleapis.com/nexar-cli-releases/v1.5.1/nexar-linux-amd64"
+      sha256 "d8544108e18d7b054adc6c494c4ba28e655fb8d22719b836ffde659ac8b05d58"
 
       def install
         bin.install "nexar-linux-amd64" => "nexar"
@@ -35,8 +35,8 @@ class Nexar < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/nexar-cli-releases/v1.5.0/nexar-linux-arm64"
-      sha256 "1cf8d35755eee98975342a3eaaef2d6efd056b7767ecb616ce250b413c775787"
+      url "https://storage.googleapis.com/nexar-cli-releases/v1.5.1/nexar-linux-arm64"
+      sha256 "702cdb2808dbbb0e5e9b16fc4f5e3726ed3b7ea3902bf96d04d4f581024250d8"
 
       def install
         bin.install "nexar-linux-arm64" => "nexar"
