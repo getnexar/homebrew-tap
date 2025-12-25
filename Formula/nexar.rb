@@ -7,7 +7,7 @@ class Nexar < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://storage.googleapis.com/nexar-cli-releases/v1.12.1/nexar-darwin-amd64"
-      sha256 "1a158e5c1e1b3cc652911ac0a97cc12e6269087634bd094387c1e6a1965e99b6"
+      sha256 "377856eae3090e558b5e4aebe0e8da04170db8ba207145594e7e839f78e5ba39"
 
       def install
         bin.install "nexar-darwin-amd64" => "nexar"
@@ -16,7 +16,7 @@ class Nexar < Formula
 
     if Hardware::CPU.arm?
       url "https://storage.googleapis.com/nexar-cli-releases/v1.12.1/nexar-darwin-arm64"
-      sha256 "12681a2fc266183be504b9357ccbb4d654265d087353c9c7a887434061258343"
+      sha256 "558a43282bd2de142ee7635fa516444f09a4a9fcedb71c7b5041fb809ac43fcd"
 
       def install
         bin.install "nexar-darwin-arm64" => "nexar"
@@ -27,7 +27,7 @@ class Nexar < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://storage.googleapis.com/nexar-cli-releases/v1.12.1/nexar-linux-amd64"
-      sha256 "1300e36d029894210c71da3bcafbe1881136909d7bf5200d97ae21aff59f0388"
+      sha256 "a88cb0e1582704cc818f0ffb35fdb3ce66ad00d12ea0bb4fce2d03a5d9fb4688"
 
       def install
         bin.install "nexar-linux-amd64" => "nexar"
@@ -36,7 +36,7 @@ class Nexar < Formula
 
     if Hardware::CPU.arm?
       url "https://storage.googleapis.com/nexar-cli-releases/v1.12.1/nexar-linux-arm64"
-      sha256 "675c5f5ff69df0bed85c5a2270af09a55b2c5c6c4eb3ef17ab63ec193514e7b4"
+      sha256 "669d90aa76de059e93aff8af91ebeea7677bd2df8ed66ef17b16a744fb597768"
 
       def install
         bin.install "nexar-linux-arm64" => "nexar"
