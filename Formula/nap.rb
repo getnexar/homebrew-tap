@@ -1,13 +1,13 @@
 class Nap < Formula
   desc "CLI tool for deploying apps to Nexar Platform"
   homepage "https://www.corp.nexars.ai"
-  version "3.0.5"
+  version "3.0.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/nexar-cli-releases/v3.0.5/nap-darwin-amd64"
-      sha256 "fa19f69c7714150405c9d4503f7b2d53eb4fe4eef44d8fe87ca5ceb822fe21b3"
+      url "https://storage.googleapis.com/nexar-cli-releases/v3.0.6/nap-darwin-amd64"
+      sha256 "10687b842da911b7b5df27a265276942000604f77c5d5247efaf6086de5f140a"
 
       def install
         bin.install "nap-darwin-amd64" => "nap"
@@ -15,8 +15,8 @@ class Nap < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/nexar-cli-releases/v3.0.5/nap-darwin-arm64"
-      sha256 "182055f8d542a6ab41ab5f5f2796f7f5611648b5de9fc111ce8406a5706d8c1b"
+      url "https://storage.googleapis.com/nexar-cli-releases/v3.0.6/nap-darwin-arm64"
+      sha256 "284cbb10fab2b0a3c5e7598720fd5003f6e0fc120bcdc990cd27134462ef60be"
 
       def install
         bin.install "nap-darwin-arm64" => "nap"
@@ -26,8 +26,8 @@ class Nap < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/nexar-cli-releases/v3.0.5/nap-linux-amd64"
-      sha256 "6eec92afaeb5d7ccbcdf19176290bbbfbe6b62b8bbedbcecec9b0da0ef7c19b7"
+      url "https://storage.googleapis.com/nexar-cli-releases/v3.0.6/nap-linux-amd64"
+      sha256 "85d9863e569e64482b38ca69bff42178a419dd3b57b6934858d9df0d370e3853"
 
       def install
         bin.install "nap-linux-amd64" => "nap"
@@ -35,8 +35,8 @@ class Nap < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/nexar-cli-releases/v3.0.5/nap-linux-arm64"
-      sha256 "214d55371f1d5e54d0c5adb0d7dfe59c358ed16b58784f48fc548c5b903ae232"
+      url "https://storage.googleapis.com/nexar-cli-releases/v3.0.6/nap-linux-arm64"
+      sha256 "3ce221f02e19e8b1d31d69e3d1eb3a3a4157f7de9e450e2ec1f1b658a8fcbf07"
 
       def install
         bin.install "nap-linux-arm64" => "nap"
