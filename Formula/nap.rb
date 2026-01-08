@@ -7,7 +7,7 @@ class Nap < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://storage.googleapis.com/nexar-cli-releases/v3.1.0/nap-darwin-amd64"
-      sha256 "5fc797ccab9455899fa475fbcb9e35387b42a106da2b021f33c3a092ac863995"
+      sha256 "5f11ab01f9b14330620bf8b6d8291092e3dd534075a5522079487709cc91a430"
 
       def install
         bin.install "nap-darwin-amd64" => "nap"
@@ -16,7 +16,7 @@ class Nap < Formula
 
     if Hardware::CPU.arm?
       url "https://storage.googleapis.com/nexar-cli-releases/v3.1.0/nap-darwin-arm64"
-      sha256 "43d81d08d13fad34e639af852b6d28e5cee774879e76dc6f6ac5d43e42164362"
+      sha256 "2e43169d3d4ffa160931eb6989468f46b4a1a233882de6b612d18ce6a85b202d"
 
       def install
         bin.install "nap-darwin-arm64" => "nap"
@@ -27,7 +27,7 @@ class Nap < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://storage.googleapis.com/nexar-cli-releases/v3.1.0/nap-linux-amd64"
-      sha256 "4ffeb0739b72a872237e18af5770638858d0fcececab9ce13afa3f34efac3515"
+      sha256 "c6e7caf070730450793f3d718d079dd3e355092541a5c9f92ebf426db008f96f"
 
       def install
         bin.install "nap-linux-amd64" => "nap"
@@ -36,7 +36,7 @@ class Nap < Formula
 
     if Hardware::CPU.arm?
       url "https://storage.googleapis.com/nexar-cli-releases/v3.1.0/nap-linux-arm64"
-      sha256 "6d0cce37bcdbbb5d91e0576df374db461399082fcbdd0125118077691be5ce44"
+      sha256 "2b53a60e13b5ad33a5fe086e00904008431eb157799eb1348dd49dc30e6e2387"
 
       def install
         bin.install "nap-linux-arm64" => "nap"
